@@ -104,6 +104,7 @@ def COST_207(area_type, f_c, v, N, dt, samples_count, dd):
         
     lin_power = []
     shifts_on_samples = []
+    
     if area_type == "Tux":
         lin_power = [10**(Tux[i].power_db / 10) for i in range(len(Tux))]
         shifts_on_samples = [Tux[i].delay / dd for i in range(len(Tux))]
