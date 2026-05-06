@@ -47,6 +47,7 @@ def jakes_fading(f_d, N, t, seed=10):
     Xr = np.zeros(len(t))
     Xi = np.zeros(len(t))
 
+    # ray generate
     for i in range(N):
 
         alpha = (2*np.pi*(i+1) - np.pi + theta) / (4*N)
